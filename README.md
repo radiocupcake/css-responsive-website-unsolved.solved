@@ -19,10 +19,10 @@ This assignment should prove that a student is able to:
 
 ## Standard requirements
 
-- [ ] Fork the project to your github account
-- [ ] Clone the project to your computer
-- [ ] Open the project in VSCode with code <cloned_repo_folder_name>
-- [ ] This assignment does **NOT** have automated tests!
+- [x] Fork the project to your github account
+- [x] Clone the project to your computer
+- [x] Open the project in VSCode with code <cloned_repo_folder_name>
+- [x] This assignment does **NOT** have automated tests!
 - [ ] All the tasks of the "Specific requirements" section MUST be solved
 - [ ] The project's file/folder structure should NOT be edited!
 - [ ] The index.html file should NOT be edited!
@@ -37,14 +37,14 @@ This assignment should prove that a student is able to:
 
 Acceptance criteria:
 
-- [ ] The responsive HTML meta tag is set.
+- [x] The responsive HTML meta tag is set.
 - [ ] The website should replicate the mockup for desktop, tablet, and mobile views, incorporating all aspects such as fonts, font sizes, colors, paddings, margins, gaps, etc.
-- [ ] The hover styles are added for the desktop view for:
+- [x] The hover styles are added for the desktop view for:
   - The top navigation items
   - The social icons of the teammate
   - The links in the footer (social icons and labels, emails, phone numbers)
-- [ ] The index.html file must remain unchanged.
-- [ ] The styles.css file should remain unaltered. Any necessary styles should be appended to the /css/responsive.css file.
+- [x] The index.html file must remain unchanged.
+- [x] The styles.css file should remain unaltered. Any necessary styles should be appended to the /css/responsive.css file.
 - [ ] Media queries should address the following viewport ranges:
   - Desktop: 1024px and above
   - Tablets: 768px (0px) to 1023px
