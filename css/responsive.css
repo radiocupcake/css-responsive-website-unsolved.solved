@@ -49,6 +49,11 @@
   .footer-contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-contacts > div {
+    width: 100%;
   }
 }
 
@@ -69,14 +74,21 @@
   }
 
   .footer-contacts {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 20px;
   }
 
   .footer-contacts > div {
-    width: 100%; 
-    text-align: center; 
+    width: 100%;
+    text-align: center;
+  }
+
+  .content h1,
+  .content h2,
+  .content p.subtext {
+    text-align: center;
+    padding: 10px;
   }
 }
