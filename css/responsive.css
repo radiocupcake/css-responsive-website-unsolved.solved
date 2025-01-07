@@ -38,18 +38,26 @@
   }
 
   .teammates-list-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    gap: 30px;
+    justify-items: center;
   }
 
   footer .social-icons .icon + span {
     display: none;
   }
 
+  footer .social-icons div {
+    width: 100%;
+  }
+
   .footer-contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    justify-items: center;
   }
 
   .footer-contacts > div {
