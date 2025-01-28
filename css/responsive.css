@@ -76,9 +76,19 @@
     align-items: center;
   }
 
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   .teammate {
     border: 1px solid black;
     flex-direction: row;
+    width: 100%;
+  }
+
+  .teammate-data {
+    justify-content: center;
   }
 
   .social-icons {
@@ -91,6 +101,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 50%;
   }
 
   .footer-contacts > div {
