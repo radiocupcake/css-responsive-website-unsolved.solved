@@ -24,6 +24,11 @@
     justify-content: space-between;
   }
 
+  .top-navigation {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .portfolio-list {
     flex-direction: column;
     gap: 1rem;
@@ -34,12 +39,11 @@
   }
 
   .teammates-list-wrapper {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    gap: 30px;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
+
 
   footer .social-icons .icon + span {
     display: none;
@@ -57,7 +61,7 @@
   }
 
   .footer-contacts > div {
-    width: 100%;
+    width: 50%;
   }
 }
 
