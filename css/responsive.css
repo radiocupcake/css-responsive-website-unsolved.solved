@@ -1,10 +1,41 @@
 @media (min-width: 1024px) {
+  .logo-icon {
+    background-color: white;
+  }
+
+  .facebook:hover .icon,
+  .facebook:hover span {
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+
+  .twitter:hover .icon,
+  .twitter:hover span {
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+
+  .instagram:hover .icon,
+  .instagram:hover span {
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+
+  .linked-in:hover .icon,
+  .linked-in:hover span {
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+
   header a:hover,
-  .teammate-social-icons div:hover,
-  .footer-content .social-icons .icon:hover,
-  .footer-content a:hover {
+  .teammate-social-icons div:hover {
     font-weight: bold;
     background-color: grey;
+    color: white;
+  }
+
+  .footer-content a:hover {
+    text-decoration: underline;
     color: white;
   }
 
@@ -22,6 +53,7 @@
     position: fixed;
     width: 100%;
     justify-content: space-between;
+    background-color: white;
   }
 
   .top-navigation {
@@ -40,10 +72,10 @@
 
   .teammates-list-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 294.5px 294.5px;
+    grid-template-rows: 234.219px 234.219px 234.219px 234.219px;
+    place-items: center;
   }
-
 
   footer .social-icons .icon + span {
     display: none;
@@ -55,17 +87,41 @@
 
   .footer-contacts {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
     justify-items: center;
+    width: 100%;
   }
 
   .footer-contacts > div {
     width: 50%;
   }
+
+  .phones {
+    justify-self: center;
+    grid-column: 1 / span 2;
+  }
 }
 
 @media (max-width: 767px) {
+  nav.top-navigation {
+    width: 100%;
+    min-width: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  button.trigram {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+  }
+
   .portfolio-item {
     flex-direction: column;
     align-items: center;
@@ -76,19 +132,42 @@
     align-items: center;
   }
 
-  .teammates-list-wrapper {
+  .teammate-img-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .teammates-list-wrapper {
+    display: grid;
+    flex-direction: initial;
+    flex-wrap: initial;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    width: 300px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .teammate {
     border: 1px solid black;
     flex-direction: row;
     width: 100%;
+    align-items: center;
+    padding-right: 20px;
   }
 
   .teammate-data {
     justify-content: center;
+  }
+
+  .teammates-list::after,
+  .teammates-list::before {
+    display: none;
   }
 
   .social-icons {
